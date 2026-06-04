@@ -1,0 +1,37 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header#cabecalho {
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    height: 10vh;
+}
+
+header#cabecalho img#logocidade {
+    width: 20vh;
+    height: auto;
+}
+
+table#icones {
+    padding-left: 13vh;
+    border-collapse: separate;
+    border-spacing: 3vh;
+}
+
+table#icones img{
+    height: auto;
+    width: 4vh;
+}
+
+div#corpo_pagina{
+    display: flex;
+    background-color:white;
+    position: absolute;
+    margin-top: 0vh;
+    width:100%;
+    height: 100%;
+}
