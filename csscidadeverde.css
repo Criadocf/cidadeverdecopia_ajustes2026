@@ -1,43 +1,148 @@
-*{
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
+body {
+    background-color: gray;
 }
 
+div#pagina_principal {
+    max-width: 380px;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    margin: 0 auto;  /*Margem de fora do conteiner.*/
+}
 
-header#cabecalho {
+header.cabecalho {
+    height: 70px;
+    background-color: beige;
     display: flex;
-    background-color: rgb(241, 241, 241);
-    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header#cabecalho img#logocidade {
-    width: 20vh;
+figure img#logo {
+    width: 150px;
     height: auto;
+    position: relative;
+    left: -40px;
 }
 
-table#icones {
-    padding-left: 13vh;
-    border-collapse: separate;
-    border-spacing: 3vh;
-}
-
-table#icones img{
-    height: auto;
-    width: 4vh;
-}
-
-section#corpo_pagina {
-    padding-top:4vh;
-    padding-inline: 3vh;
-}
-
-h1#noticiainicial a {
+.interacao a {
     text-decoration: none;
+    padding: 1px;
+}
+nav.interacao a img {
+    height: 24px;
+}
+
+nav button {
+    background: none;
+    border: none;
+}
+
+
+/*TABELA DO DROPDOWN*/
+div.menu {
+    display: none;
+    position: absolute;
+    background: beige;
+    width: 380px;
+    top: 50px;
+    right: 0;
+    text-align: left;
+}
+
+
+/*LINKS*/ 
+div.menu a{
+    display: block;
+    padding: 5px;
+    background: none;
+    font-family: sans-serif;
+}
+
+div.menu a.politica {
+    border-bottom: red solid 2px;
+    color: red;
+}
+
+div.menu a.entretenimento {
+    border-bottom: #eead2d  solid 2px;
+    color: #eead2d;
+}
+
+div.menu a.geral {
+    border-bottom: darkblue solid 2px;
+    color: darkblue;
+}
+
+div.menu a.cvamarela {
+    border-bottom: goldenrod solid 2px;
+    color: goldenrod;
+}
+
+div.menu a.cvplay {
+    border-bottom: black solid 2px;
     color: black;
 }
 
-h1#noticiainicial a:hover {
-    color: blue;
-    text-decoration: none;
+div.menu a.economia {
+    border-bottom: orange solid 2px;
+    color: orange;
 }
+
+div.menu a.cidades {
+    border-bottom: aqua solid 2px;
+    color: aqua;
+}
+
+div.menu a.saude {
+    border-bottom: greenyellow solid 2px;
+    color: greenyellow;
+}
+
+div.menu a.picos {
+    border-bottom: navy solid 2px;
+    color: navy;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+button.dropdown-container img {
+    cursor: pointer;
+    height: 24px;
+}
+
+button:hover{
+    background: white;
+}
+
+/*CORES DOS BACKGROUNDS QUE CADA LINK DA LISTA QUANDO FOR CLICADO*/
+div.menu a.politica:hover {
+    background: rgba(255,0,0,0.3);
+}
+
+div.menu a.entretenimento:hover {
+    background: rgba(255, 65, 0, 0.3);
+}
+
+div.menu a.geral:hover {
+    background: rgba(0, 0, 65, 0.3);
+}
+
+div.menu a.cvamarela:hover {
+    background: rgba(255, 65, 0, 0.3);
+}
+
+div.menu a.cvplay:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.dropdown-container:focus div.menu, .dropdown-container:focus-within div.menu {
+    display: block;
+}
+
+
+
