@@ -2,6 +2,10 @@ body {
     background-color: gray;
 }
 
+* {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
 div#pagina_principal {
     max-width: 380px;
     background-color: whitesmoke;
@@ -47,6 +51,7 @@ div.menu {
     top: 50px;
     right: 0;
     text-align: left;
+    
 }
 
 
@@ -55,8 +60,10 @@ div.menu a{
     display: block;
     padding: 5px;
     background: none;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 15px !important;
 }
+
 
 div.menu a.politica {
     border-bottom: red solid 2px;
@@ -137,8 +144,21 @@ div.menu a.cvplay:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
+div.menu a.economia:hover {
+    background: rgba(255, 65, 0, 0.3);
+}
 
+div.menu a.cidades:hover {
+    background: rgba(0, 0, 255, 0.3);
+}
 
+div.menu a.saude:hover {
+    background: rgba(0,255,0, 0.1);
+}
+
+div.menu a.picos:hover {
+    background: rgba(128, 0, 128, 0.3);
+}
 
 .dropdown-container:focus div.menu, .dropdown-container:focus-within div.menu {
     display: block;
